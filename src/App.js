@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+/** Components */
+import React from 'react';
+import Header from './components/Header'
+import Features from './components/Features';
+import Testimonials from './components/Testimonials';
+import CallToAction from './components/CallToAction';
+import Footer from './components/Footer'
+
+/** Boostrap */
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+/** import CSS */
 import './App.css';
+import './components/Features.css'
+import './components/Testimonials.css'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <Header />
+        <Features />
+        <Testimonials />
+        <CallToAction />
+        <Footer />
+      </div>
+    </>
   );
 }
 
