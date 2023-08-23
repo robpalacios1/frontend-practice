@@ -1,0 +1,17 @@
+.card {
+  border: solid;
+  border-radius: 12px;
+  background-color: aqua;
+}
+
+.card:hover {
+  background-color: yellow
+}
+
+.card-body .card-title {
+  text-align: center;
+}
+
+.card-body .card-text {
+  text-align: center;
+}
